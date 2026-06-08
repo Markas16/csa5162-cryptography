@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    char text[100];
+    char key[]="QWERTYUIOPASDFGHJKLZXCVBNM";
+    int i;
+
+    printf("Enter Text: ");
+    scanf("%s",text);
+
+    printf("Cipher Text: ");
+
+    for(i=0;text[i]!='\0';i++)
+        printf("%c",key[text[i]-'A']);
+
+    return 0;
+}
