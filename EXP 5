@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    char text[100];
+    int a=5,b=8,i;
+
+    printf("Enter Text: ");
+    scanf("%s",text);
+
+    for(i=0;text[i]!='\0';i++)
+        text[i]=((a*(text[i]-'A')+b)%26)+'A';
+
+    printf("Cipher Text: %s",text);
+
+    return 0;
+}
