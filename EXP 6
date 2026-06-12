@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Affine Cipher Attack\n");
+    printf("Most frequent ciphertext letters: B and U\n");
+    printf("Assume they correspond to E and T in English.\n");
+    printf("Use equations:\n");
+    printf("B=(4a+b) mod 26\n");
+    printf("U=(19a+b) mod 26\n");
+    printf("Solve for a and b to recover key.\n");
+    return 0;
+}
