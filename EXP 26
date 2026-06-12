@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    printf("If private key is leaked, generating new e and d with same n is NOT safe.\n");
+    printf("Generate a new modulus n=p*q.\n");
+    return 0;
+}
